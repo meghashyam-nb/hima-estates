@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/hima-estates/static/css/main.e94a799c.css",
-    "main.js": "/hima-estates/static/js/main.12755362.js",
-    "index.html": "/hima-estates/index.html",
-    "main.e94a799c.css.map": "/hima-estates/static/css/main.e94a799c.css.map",
-    "main.12755362.js.map": "/hima-estates/static/js/main.12755362.js.map"
+    "main.css": "/static/css/main.e94a799c.css",
+    "main.js": "/static/js/main.fde4d3ea.js",
+    "index.html": "/index.html",
+    "main.e94a799c.css.map": "/static/css/main.e94a799c.css.map",
+    "main.fde4d3ea.js.map": "/static/js/main.fde4d3ea.js.map"
   },
   "entrypoints": [
     "static/css/main.e94a799c.css",
-    "static/js/main.12755362.js"
+    "static/js/main.fde4d3ea.js"
   ]
 }
