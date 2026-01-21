@@ -45,9 +45,9 @@ const properties = [
     location: "Mysore, Karnataka",
     tagline: "Stay in the Heart of Mysore's History",
     price: 40000,
-    guests: 12,
+    guests: 14,
     bedrooms: 6,
-    bathrooms: 3,
+    bathrooms: 7,
     coverImage: getImagePath("/images/exterior.jpg"),
     images: [
       getImagePath("/images/exterior.jpg"),
