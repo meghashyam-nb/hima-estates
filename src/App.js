@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Star, MapPin, Users, Bed, Bath, Phone, MessageCircle, X, ChevronLeft, ChevronRight, Home, Check, ExternalLink, Shield, Award, ArrowRight } from 'lucide-react';
 
+// Helper function to get correct image path
+const getImagePath = (path) => {
+  try {
+    const PUBLIC_URL = process.env.PUBLIC_URL || '';
+    return `${PUBLIC_URL}${path}`;
+  } catch {
+    return path;
+  }
+};
+
 const styles = `
   @keyframes slideUp {
     from {
@@ -38,26 +48,26 @@ const properties = [
     guests: 12,
     bedrooms: 6,
     bathrooms: 3,
-    coverImage: "/images/exterior.jpg",
+    coverImage: getImagePath("/images/exterior.jpg"),
     images: [
-      "/images/exterior.jpg",
-      "/images/living_room_1.jpg",
-      "/images/bedroom_one.jpg",
-      "/images/bedroom_two.jpg",
-      "/images/bedroom_three.jpg",
-      "/images/bedroom_four.jpg",
-      "/images/bedroom_five.jpg",
-      "/images/bedroom_six.jpg",
-      "/images/bathroom_one.jpg",
-      "/images/bathroom_two.jpg",
-      "/images/bathroom_three.jpg",
-      "/images/bathroom_four.jpg",
-      "/images/bathroom_five.jpg",
-      "/images/bathroom_six.jpg",
-      "/images/bathroom_seven.jpg",
-      "/images/terrace.jpg",
-      "/images/terrace_two.jpg",
-      "/images/terrace_three.jpg"
+      getImagePath("/images/exterior.jpg"),
+      getImagePath("/images/living_room_1.jpg"),
+      getImagePath("/images/bedroom_one.jpg"),
+      getImagePath("/images/bedroom_two.jpg"),
+      getImagePath("/images/bedroom_three.jpg"),
+      getImagePath("/images/bedroom_four.jpg"),
+      getImagePath("/images/bedroom_five.jpg"),
+      getImagePath("/images/bedroom_six.jpg"),
+      getImagePath("/images/bathroom_one.jpg"),
+      getImagePath("/images/bathroom_two.jpg"),
+      getImagePath("/images/bathroom_three.jpg"),
+      getImagePath("/images/bathroom_four.jpg"),
+      getImagePath("/images/bathroom_five.jpg"),
+      getImagePath("/images/bathroom_six.jpg"),
+      getImagePath("/images/bathroom_seven.jpg"),
+      getImagePath("/images/terrace.jpg"),
+      getImagePath("/images/terrace_two.jpg"),
+      getImagePath("/images/terrace_three.jpg")
     ],
     description: `Stay in the Heart of Mysore's History.
 
@@ -176,10 +186,10 @@ function Header({ scrolled, menuOpen, setMenuOpen }) {
 function HomePage({ setSelectedProperty }) {
   const [heroIdx, setHeroIdx] = useState(0);
   const heroImages = [
-    "/images/living_room_1.jpg",
-    "/images/exterior.jpg",
-    "/images/terrace.jpg",
-    "/images/bedroom_one.jpg"
+    getImagePath("/images/living_room_1.jpg"),
+    getImagePath("/images/exterior.jpg"),
+    getImagePath("/images/terrace.jpg"),
+    getImagePath("/images/bedroom_one.jpg")
   ];
 
   useEffect(() => {
@@ -256,7 +266,7 @@ function HomePage({ setSelectedProperty }) {
       </section>
 
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        <img src="/images/terrace.jpg" alt="About" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={getImagePath("/images/terrace.jpg")} alt="About" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 text-center text-white px-6 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-light mb-6">Heritage Meets Luxury</h2>
