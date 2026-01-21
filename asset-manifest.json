@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hima-estates/static/css/main.e94a799c.css",
+    "main.js": "/hima-estates/static/js/main.685c6f89.js",
+    "index.html": "/hima-estates/index.html",
+    "main.e94a799c.css.map": "/hima-estates/static/css/main.e94a799c.css.map",
+    "main.685c6f89.js.map": "/hima-estates/static/js/main.685c6f89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e94a799c.css",
+    "static/js/main.685c6f89.js"
+  ]
+}
