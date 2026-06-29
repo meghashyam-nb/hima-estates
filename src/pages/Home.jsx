@@ -89,13 +89,13 @@ function WhyUs() {
     { icon: <Sparkles size={22} />, title: "Authentic heritage", body: "Stay in homes that tell stories — ancestral villas, working farms, century-old architecture." },
   ];
   return (
-    <section className="section-pad" style={{ padding: '64px 24px', maxWidth: 1280, margin: '0 auto' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 32 }}>
+    <section className="section-pad whyus-section" style={{ padding: '64px 24px', maxWidth: 1280, margin: '0 auto' }}>
+      <div className="whyus-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 32 }}>
         {features.map((f, i) => (
-          <div key={i}>
-            <div style={{ color: 'var(--brand)', marginBottom: 12 }}>{f.icon}</div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 6 }}>{f.title}</h3>
-            <p style={{ color: 'var(--muted)', fontSize: 14, lineHeight: 1.6 }}>{f.body}</p>
+          <div key={i} className="whyus-card">
+            <div className="whyus-icon" style={{ color: 'var(--brand)', marginBottom: 12 }}>{f.icon}</div>
+            <h3 className="whyus-title" style={{ fontSize: 18, fontWeight: 700, marginBottom: 6 }}>{f.title}</h3>
+            <p className="whyus-body" style={{ color: 'var(--muted)', fontSize: 14, lineHeight: 1.6 }}>{f.body}</p>
           </div>
         ))}
       </div>

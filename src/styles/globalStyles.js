@@ -269,6 +269,31 @@ export const styles = `
 
     .section-pad { padding: 56px 20px !important; }
     .hero-content { padding: 0 20px 48px !important; }
+
+    /* Why-us: compact horizontal-scroll chips instead of full cards */
+    .whyus-section { padding: 32px 20px !important; }
+    .whyus-grid {
+      display: flex !important;
+      grid-template-columns: none !important;
+      gap: 10px !important;
+      overflow-x: auto !important;
+      padding-bottom: 4px !important;
+      -webkit-overflow-scrolling: touch;
+    }
+    .whyus-card {
+      flex: 0 0 auto !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      background: var(--offwhite) !important;
+      border-radius: 30px !important;
+      padding: 10px 16px !important;
+      white-space: nowrap !important;
+    }
+    .whyus-icon { margin-bottom: 0 !important; display: flex !important; }
+    .whyus-icon svg { width: 16px !important; height: 16px !important; }
+    .whyus-title { font-size: 13px !important; margin-bottom: 0 !important; font-weight: 600 !important; }
+    .whyus-body { display: none !important; }
   }
 
   @media (min-width: 901px) {
