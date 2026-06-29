@@ -4,40 +4,87 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#1a3a2a" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- PRIMARY SEO -->
+    <title>HIMA ESTATES | Premium Vacation Rentals in Karnataka, India</title>
+    <meta name="description" content="Book premium vacation homes, heritage homestays and nature retreats across Karnataka. HIMA ESTATES offers handpicked properties in Coorg, Chikmagalur, and more. Direct booking, best rates." />
+    <meta name="keywords" content="vacation rental Karnataka, holiday home Karnataka, homestay Coorg, resort Chikmagalur, nature retreat Karnataka, HIMA ESTATES, villa rental Karnataka, weekend getaway Bangalore" />
+    <meta name="author" content="HIMA ESTATES" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.himaestates.com/" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.himaestates.com/" />
+    <meta property="og:title" content="HIMA ESTATES | Premium Vacation Rentals in Karnataka" />
+    <meta property="og:description" content="Discover handpicked vacation homes and heritage retreats across Karnataka. Book directly for the best rates." />
+    <meta property="og:image" content="https://www.himaestates.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="HIMA ESTATES" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.himaestates.com/" />
+    <meta name="twitter:title" content="HIMA ESTATES | Premium Vacation Rentals in Karnataka" />
+    <meta name="twitter:description" content="Discover handpicked vacation homes and heritage retreats across Karnataka. Book directly for the best rates." />
+    <meta name="twitter:image" content="https://www.himaestates.com/og-image.jpg" />
+
+    <!-- GEO -->
+    <meta name="geo.region" content="IN-KA" />
+    <meta name="geo.placename" content="Karnataka, India" />
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "HIMA ESTATES",
+      "url": "https://www.himaestates.com",
+      "logo": "https://www.himaestates.com/logo.png",
+      "image": "https://www.himaestates.com/og-image.jpg",
+      "description": "Premium vacation rentals across Karnataka, India. Heritage homestays, nature retreats and holiday homes in Coorg, Chikmagalur and more.",
+      "telephone": "+917090520216",
+      "email": "himaestates@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Karnataka"
+      },
+      "priceRange": "₹₹₹",
+      "sameAs": [
+        "https://www.instagram.com/himaestates"
+      ]
+    }
+    </script>
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- GitHub Pages SPA routing: restore deep-link path saved by 404.html -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      HIMA ESTATES offers premium vacation rentals across Karnataka, India.
+      Discover heritage homestays, nature retreats and holiday villas in Coorg,
+      Chikmagalur and more. Call or WhatsApp +91 70905 20216 or email
+      himaestates@gmail.com to book directly.
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
