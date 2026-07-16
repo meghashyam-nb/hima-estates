@@ -27,7 +27,7 @@ export default function BookingWidget({ property, blockedRanges = [] }) {
 
   const nights = range.from && range.to ? differenceInCalendarDays(range.to, range.from) : 0;
   const subtotal = nights * property.price;
-  const total = nights > 0 ? subtotal + property.cleaningFee : 0;
+  const total = nights > 0 ? subtotal + (property.cleaningFee || 0) : 0;
 
   const dateLabel = (d) => d ? format(d, 'MMM d, yyyy') : '';
 
@@ -102,10 +102,12 @@ export default function BookingWidget({ property, blockedRanges = [] }) {
               <span style={{ textDecoration: 'underline' }}>₹{property.price.toLocaleString()} x {nights} night{nights > 1 ? 's' : ''}</span>
               <span>₹{subtotal.toLocaleString()}</span>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14 }}>
-              <span style={{ textDecoration: 'underline' }}>Cleaning fee</span>
-              <span>₹{property.cleaningFee.toLocaleString()}</span>
-            </div>
+            {property.cleaningFee > 0 && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14 }}>
+                <span style={{ textDecoration: 'underline' }}>Cleaning fee</span>
+                <span>₹{property.cleaningFee.toLocaleString()}</span>
+              </div>
+            )}
             <div style={{ borderTop: '1px solid var(--line)', paddingTop: 12, display: 'flex', justifyContent: 'space-between', fontWeight: 700, fontSize: 15 }}>
               <span>Total</span>
               <span>₹{total.toLocaleString()}</span>

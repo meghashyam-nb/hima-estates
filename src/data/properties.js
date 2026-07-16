@@ -9,6 +9,7 @@ export const blockedDates = {
   2: [],
   3: [],
   4: [],
+  5: [],
 };
 
 export const properties = [
@@ -110,6 +111,29 @@ export const properties = [
     highlights: ["Private farmhouse on acres of lush greenery","Massive open lawn — ideal for gatherings","Just 15 minutes from the city centre","Ample parking space on premises","Charming veranda with open farm views"],
     amenities: ["WiFi","Free Parking","Kitchen","Air Conditioning","Firepit","Veranda","Open Lawn","Dining Hall","Living Room","Security Cameras","Smoking Allowed"],
     houseRules: ["Check-in: 2 PM","Check-out: 11 AM","Maximum 4 guests","Smoking allowed outdoors","Respect farm surroundings"],
+    whatsapp: "917090520216", phone: "+91 70905 20216"
+  },
+  {
+    id: 5,
+    slug: "la-villa-by-beach-mangalore",
+    name: "La Villa",
+    subtitle: "Kulai, Mangalore",
+    location: "Kulai, Mangalore, Karnataka",
+    tagline: "Quiet Luxury, Less Than 1 km from the Beach",
+    price: 30000,
+    guests: 6, bedrooms: 3, bathrooms: 3,
+    badge: "6 People Allowed",
+    coverImage: "/images/lavillabeach/entrance.jpg",
+    images: [
+      "/images/lavillabeach/entrance.jpg","/images/lavillabeach/outdoor.jpg","/images/lavillabeach/outdoor_2.jpg",
+      "/images/lavillabeach/indoor.jpg","/images/lavillabeach/indoor1.jpg","/images/lavillabeach/indoor3.jpg",
+      "/images/lavillabeach/indoor4.jpg","/images/lavillabeach/indoor5.jpg","/images/lavillabeach/bedroom.jpg",
+      "/images/lavillabeach/bathroon.jpg","/images/lavillabeach/kitchen.jpg","/images/lavillabeach/kitchen1.jpg"
+    ],
+    description: `A thoughtfully designed adults-only retreat less than 1 km from the beach. With warm interiors, natural textures, and a private outdoor space perfect for quiet evenings or casual gatherings, this home offers calm, comfort, and character. One of the best local restaurants is right next door, and the peaceful setting makes it ideal for those who prefer intention over noise. Not for everyone — and that's exactly the point.\n\nTucked less than 1 km from the shoreline, this adults-only retreat offers a quiet kind of luxury — the kind that doesn't try too hard.\n\nDesigned with care and character, the home blends warm lighting, thoughtful textures, and natural tones to create a space that feels calm, grounded, and quietly beautiful. From the custom wood finishes to the curated decor, every detail is meant to make you feel at ease the moment you step in.\n\nOutside, a breezy open space invites you to slow down. It's perfect for sharing a drink as the sun sets, or gathering with close friends for a mellow evening under the stars. It's the kind of place that holds space for both conversation and stillness.\n\nNext door, you'll find one of the area's most beloved restaurants — making meals something to look forward to, not plan around. Whether it's an early breakfast or a late-night bite, good food is always just a few steps away.\n\nAnd while the beach isn't at your doorstep, it's just under a kilometre away — close enough for spontaneous dips, but far enough to keep your mornings quiet and your nights peaceful.\n\nThis home isn't for everyone — and that's its quiet strength. It's meant for adults who appreciate thoughtful design, easy rhythms, and a little space from the expected.`,
+    highlights: ["Adults-only retreat for quiet, intentional stays","Less than 1 km from the beach","Private outdoor space with warm, natural textures","One of the area's most-loved restaurants next door","3 bedrooms, 6 beds — ideal for small groups"],
+    amenities: ["WiFi","Parking","Kitchen","Air Conditioning","Hot Water","Private Outdoor Space","Dining Area","Living Room","Housekeeping"],
+    houseRules: ["Check-in: 2 PM","Check-out: 11 AM","No smoking inside","Maximum 6 guests","Adults only (18+)"],
     whatsapp: "917090520216", phone: "+91 70905 20216"
   }
 ];
