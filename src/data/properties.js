@@ -122,11 +122,11 @@ export const properties = [
     tagline: "Quiet Luxury, Less Than 1 km from the Beach",
     price: 30000,
     guests: 6, bedrooms: 3, bathrooms: 3,
-    badge: "6 People Allowed",
-    coverImage: "/images/lavillabeach/entrance.jpg",
+    badge: "Beach Retreat",
+    coverImage: "/images/lavillabeach/indoor.jpg",
     images: [
-      "/images/lavillabeach/entrance.jpg","/images/lavillabeach/outdoor.jpg","/images/lavillabeach/outdoor_2.jpg",
-      "/images/lavillabeach/indoor.jpg","/images/lavillabeach/indoor1.jpg","/images/lavillabeach/indoor3.jpg",
+      "/images/lavillabeach/indoor.jpg","/images/lavillabeach/entrance.jpg","/images/lavillabeach/outdoor.jpg",
+      "/images/lavillabeach/outdoor_2.jpg","/images/lavillabeach/indoor1.jpg","/images/lavillabeach/indoor3.jpg",
       "/images/lavillabeach/indoor4.jpg","/images/lavillabeach/indoor5.jpg","/images/lavillabeach/bedroom.jpg",
       "/images/lavillabeach/bathroon.jpg","/images/lavillabeach/kitchen.jpg","/images/lavillabeach/kitchen1.jpg"
     ],
