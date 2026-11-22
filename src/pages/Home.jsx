@@ -56,7 +56,7 @@ function Hero({ location, setLocation, range, setRange, guests, setGuests, onSea
   }, [slides.length]);
 
   return (
-    <section id="home" style={{ position: 'relative', height: '78vh', minHeight: 480, overflow: 'hidden', background: '#111' }}>
+    <section id="home" style={{ position: 'relative', height: '78vh', minHeight: 480, background: '#111' }}>
       {slides.map((s, i) => (
         <img key={i} src={s.img} alt={s.label} style={{
           position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
